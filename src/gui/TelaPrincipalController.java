@@ -1,11 +1,17 @@
 package gui;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import application.Main;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.MenuItem;
+import javafx.scene.layout.VBox;
 
 public class TelaPrincipalController implements Initializable {
 	
@@ -14,9 +20,9 @@ public class TelaPrincipalController implements Initializable {
 	
 	@FXML
 	public void onMenuItemNovoProduto() {
-		System.out.println("Novo produto");
+		carregarTela("/gui/TelaCadastroProduto.fxml");
 	}
-	
+
 	@FXML
 	private MenuItem menuItemNovoItem;
 	
@@ -45,6 +51,25 @@ public class TelaPrincipalController implements Initializable {
 	public void initialize(URL url, ResourceBundle rb) {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	private void carregarTela(String absoluteName) {
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
+			VBox newVBox = loader.load();
+			
+			Scene mainScene = Main.getMainScene();
+			VBox mainVBox = (VBox) mainScene.getRoot();
+			
+			Node mainMenu = mainVBox.getChildren().get(0);
+			mainVBox.getChildren().clear();
+			mainVBox.getChildren().add(mainMenu);
+			mainVBox.getChildren().addAll(newVBox.getChildren());
+		}
+		catch(IOException e) {
+			e.getMessage();
+		}
+				
 	}
 
 }
