@@ -41,7 +41,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TelaPrincipalController">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -49,10 +49,10 @@
           <items>
             <Menu mnemonicParsing="false" text="Novo">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Produto" />
-                        <MenuItem mnemonicParsing="false" text="Item" />
-                        <MenuItem mnemonicParsing="false" text="Fornecedor" />
-                        <MenuItem mnemonicParsing="false" text="Marca" />
+                        <MenuItem fx:id="menuItemNovoProduto" mnemonicParsing="false" onAction="#onMenuItemNovoProduto" text="Produto" />
+                        <MenuItem fx:id="menuItemNovoItem" mnemonicParsing="false" onAction="#onMenuItemNovoItem" text="Item" />
+                        <MenuItem fx:id="menuItemNovoFornecedor" mnemonicParsing="false" onAction="#onMenuItemNovoFornecedor" text="Fornecedor" />
+                        <MenuItem fx:id="menuItemNovoMarca" mnemonicParsing="false" onAction="#onMenuItemNovoMarca" text="Marca" />
                      </items></Menu>
                   <Menu mnemonicParsing="false" text="Editar">
                     <items>
