@@ -28,7 +28,7 @@ public class TelaPrincipalController implements Initializable {
 	
 	@FXML
 	public void onMenuItemNovoItem() {
-		System.out.println("Novo item");
+		carregarTela("/gui/TelaCadastroItem.fxml");
 	}
 	
 	@FXML
