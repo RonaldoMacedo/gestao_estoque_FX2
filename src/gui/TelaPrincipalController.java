@@ -76,6 +76,15 @@ public class TelaPrincipalController implements Initializable {
 	public void onMenuItemEditarFornecedor() {
 		carregarTela("/gui/TelaEditarFornecedor.fxml");
 	}
+	
+	
+	@FXML
+	private MenuItem menuItemConsultarProduto;
+	
+	@FXML
+	public void onMenuItemConsultarProduto() {
+		carregarTela("/gui/TelaConsultarProduto.fxml");
+	}
 
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {

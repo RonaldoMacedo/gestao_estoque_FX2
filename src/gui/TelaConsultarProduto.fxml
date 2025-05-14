@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ProdutoListController">
+   <children>
+      <AnchorPane prefHeight="81.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="14.0" layoutY="23.0" text="Lista de produtos">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="listaProduto" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="tableColumnCodigo" prefWidth="75.0" text="Código" />
+          <TableColumn fx:id="tableColumnDescricaoInterna" prefWidth="149.5999755859375" text="Descrição interna" />
+            <TableColumn fx:id="tableColumnSituacao" prefWidth="75.0" text="Situação" />
+            <TableColumn fx:id="tableColumnSaldo" prefWidth="75.0" text="Saldo" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

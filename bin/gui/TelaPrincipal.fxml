@@ -66,7 +66,7 @@
         </Menu>
         <Menu mnemonicParsing="false" text="Consulta">
           <items>
-            <MenuItem mnemonicParsing="false" text="Produto" />
+            <MenuItem fx:id="menuItemConsultarProduto" mnemonicParsing="false" onAction="#onMenuItemConsultarProduto" text="Produto" />
             <MenuItem mnemonicParsing="false" text="Item" />
             <MenuItem mnemonicParsing="false" text="Fornecedor" />
             <MenuItem mnemonicParsing="false" text="Marca" />
