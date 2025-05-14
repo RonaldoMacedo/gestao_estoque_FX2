@@ -36,7 +36,7 @@ public class TelaPrincipalController implements Initializable {
 	
 	@FXML
 	public void onMenuItemNovoFornecedor() {
-		System.out.println("Novo fornecedor");
+		carregarTela("/gui/TelaCadastroFornecedor.fxml");
 	}
 	
 	@FXML
@@ -44,7 +44,7 @@ public class TelaPrincipalController implements Initializable {
 	
 	@FXML
 	public void onMenuItemNovoMarca() {
-		System.out.println("Nova marca");
+		carregarTela("/gui/TelaCadastroMarca.fxml");
 	}
 
 	@Override
