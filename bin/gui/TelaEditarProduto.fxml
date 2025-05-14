@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="192.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="30.0" layoutY="18.0" text="Edição de produto">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField layoutX="134.0" layoutY="77.0" />
+            <Label layoutX="30.0" layoutY="81.0" text="Descrição interna" />
+            <Label layoutX="344.0" layoutY="81.0" text="Situação" />
+            <Button layoutX="211.0" layoutY="131.0" mnemonicParsing="false" text="Salvar" />
+            <Button layoutX="318.0" layoutY="131.0" mnemonicParsing="false" text="Voltar" />
+            <ComboBox editable="true" layoutX="405.0" layoutY="77.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

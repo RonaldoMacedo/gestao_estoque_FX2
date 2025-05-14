@@ -23,6 +23,7 @@ public class TelaPrincipalController implements Initializable {
 		carregarTela("/gui/TelaCadastroProduto.fxml");
 	}
 
+	
 	@FXML
 	private MenuItem menuItemNovoItem;
 	
@@ -30,6 +31,7 @@ public class TelaPrincipalController implements Initializable {
 	public void onMenuItemNovoItem() {
 		carregarTela("/gui/TelaCadastroItem.fxml");
 	}
+	
 	
 	@FXML
 	private MenuItem menuItemNovoFornecedor;
@@ -39,12 +41,40 @@ public class TelaPrincipalController implements Initializable {
 		carregarTela("/gui/TelaCadastroFornecedor.fxml");
 	}
 	
+	
 	@FXML
 	private MenuItem menuItemNovoMarca;
 	
 	@FXML
 	public void onMenuItemNovoMarca() {
 		carregarTela("/gui/TelaCadastroMarca.fxml");
+	}
+	
+	
+	@FXML
+	private MenuItem menuItemEditarProduto;
+	
+	@FXML
+	public void onMenuItemEditarProduto() {
+		carregarTela("/gui/TelaEditarProduto.fxml");
+	}
+	
+	
+	@FXML
+	private MenuItem menuItemEditarItem;
+	
+	@FXML
+	public void onMenuItemEditarItem() {
+		carregarTela("/gui/TelaEditarItem.fxml");
+	}
+	
+	
+	@FXML
+	private MenuItem menuItemEditarFornecedor;
+	
+	@FXML
+	public void onMenuItemEditarFornecedor() {
+		carregarTela("/gui/TelaEditarFornecedor.fxml");
 	}
 
 	@Override
