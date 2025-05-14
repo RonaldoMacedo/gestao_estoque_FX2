@@ -26,6 +26,10 @@ public class Produto implements Serializable {
 	public Integer getId_produto() {
 		return id_produto;
 	}
+	
+	public void setId_produto(int id_produto) {
+		this.id_produto = id_produto;
+	}
 
 	public String getDescricao_interna() {
 		return descricao_interna;
@@ -45,6 +49,10 @@ public class Produto implements Serializable {
 
 	public Integer getSaldo() {
 		return saldo;
+	}
+	
+	public void setSaldo(int saldo) {
+		this.saldo = saldo;
 	}
 
 	@Override
@@ -69,5 +77,5 @@ public class Produto implements Serializable {
 		return "Produto [id_produto=" + id_produto + ", descricao_interna=" + descricao_interna + ", situacao="
 				+ situacao + ", saldo=" + saldo + "]";
 	}
-			
+
 }
